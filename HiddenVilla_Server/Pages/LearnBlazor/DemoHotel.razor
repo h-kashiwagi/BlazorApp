@@ -1,0 +1,63 @@
+﻿@page "/demoHotel"
+@using Model
+
+
+<h1>We will display hotel rooms and amenitites here!</h1>
+<div class="border p-2 mt-2" style="background-color:azure">　@*m=マージン、mt=マージントップ*@
+    <h2 class="text-info">Room List [USING COMPONENT]</h2>
+    <div class="row container">
+        @foreach (var room in RoomsList)
+        {
+            <div class="bg-light border p-2 col-5">     @*bg-light=背景色、border=線、p-2=パディング,col-05=色*@
+                <h4 class="text-secondary">Room - @room.Id</h4>　@*text-secondaryは文字の色*@
+                @room.RoomName<br />
+                @room.Price.ToString("c")<br />
+                <input type="checkbox" @bind-value="room.IsActive" /> &nbsp;Is Active<br />
+                <span>This room is @(room.IsActive?"Active":"InActive")</span>
+            </div>
+        }
+    </div>
+</div>
+
+
+@code{
+
+
+    List<BlazorRoom> RoomsList = new List<BlazorRoom>();
+
+
+
+    protected override void OnInitialized()　@*OnInitializedメソッドをオーバーライドする(基底クラスのcomponentBaseに実装されているメソッドでオーバーライドで実装して使用する)*@
+    {
+        base.OnInitialized();　　　　@*baseは派生クラスから基底クラスのメソッドにアクセスするためにつかう*@
+
+        RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
+        {
+            Id = 201, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
+            RoomName = "Villa Suite One Bed Room",
+            Price = 399,
+            IsActive = true,
+            RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
+                                                            {
+                         new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
+                         new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
+
+                         }
+                        });
+
+                        RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
+                        {
+                            Id = 301, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
+                            RoomName = "Villa Suite Tow Bed Room",
+                            Price = 699,
+                            IsActive = true,
+                            RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
+                                                                                            {
+                           new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},
+                           new Model.BlazorRoomProp{Id=2,Name="占有率",Value="6"},
+
+                          }
+                                        });
+                                    }
+}
+
