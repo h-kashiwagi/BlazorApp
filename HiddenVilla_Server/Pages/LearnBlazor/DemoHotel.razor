@@ -2,19 +2,34 @@
 @using Model
 
 
-<h1>We will display hotel rooms and amenitites here!</h1>
-<div class="border p-2 mt-2" style="background-color:azure">　@*m=マージン、mt=マージントップ*@
-    <h2 class="text-info">Room List [USING COMPONENT]</h2>
+<h1>ホテルの部屋とアメニティです！</h1>
+<div class="border p-2 mt-2" style="background-color:azure">
+    @*m=マージン、mt=マージントップ、style="background-color:azureは薄い水色"*@
+    <h2 class="text-info">部屋一覧 [USING COMPONENT]</h2>
     <div class="row container">
-        @foreach (var room in RoomsList)
+        @*row container=列*@
+        @foreach (var room in RoomsList) @*roomがBlazorRoom*@
         {
-            <div class="bg-light border p-2 col-5">     @*bg-light=背景色、border=線、p-2=パディング,col-05=色*@
-                <h4 class="text-secondary">Room - @room.Id</h4>　@*text-secondaryは文字の色*@
-                @room.RoomName<br />
-                @room.Price.ToString("c")<br />
-                <input type="checkbox" @bind-value="room.IsActive" /> &nbsp;Is Active<br />
-                <span>This room is @(room.IsActive?"Active":"InActive")</span>
-            </div>
+        <div class="bg-light border p-2 col-5">
+            @*bg-light=背景色、border=線、p-2=パディング,col-5=色（グレー）*@
+            <h4 class="text-secondary">部屋 - @room.Id</h4>　@*text-secondary＝文字の色（グレー）*@
+
+            @room.RoomName<br />
+            @room.Price.ToString("c")<br />　　@*.ToString("c")=\*@
+            <input type="checkbox" @bind-value="room.IsActive"　checked="@(room.IsActive?"checked":null)" /> &nbsp;有効<br />
+            <span>こちらの部屋は @(room.IsActive?"有効":"無効")</span>
+
+            @if (room.IsActive)@*Trueの場合*@
+            {
+                @foreach (var roomProp in room.RoomProps)@*BlazorRoomのBlazorRoomPropリストの中から取り出す*@
+                {
+                    <p>@roomProp.Name：@roomProp.Value</p>
+                }
+            }
+            <br />
+            <input type="button" class="btn btn-danger" value="削除" />
+            <input type="button" class="btn btn-success" value="編集" />
+        </div>
         }
     </div>
 </div>
@@ -34,11 +49,11 @@
         RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
         {
             Id = 201, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
-            RoomName = "Villa Suite One Bed Room",
+            RoomName = "シングルベッドルーム",
             Price = 399,
             IsActive = true,
             RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
-                                                            {
+                         {
                          new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
                          new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
 
@@ -48,7 +63,7 @@
                         RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
                         {
                             Id = 301, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
-                            RoomName = "Villa Suite Tow Bed Room",
+                            RoomName = "ダブルベッドルーム",
                             Price = 699,
                             IsActive = true,
                             RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@

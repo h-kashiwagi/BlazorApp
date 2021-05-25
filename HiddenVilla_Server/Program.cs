@@ -20,7 +20,7 @@ namespace HiddenVilla_Server
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>();    //Startup.cs‚ª‹N“®
                 });
     }
 }

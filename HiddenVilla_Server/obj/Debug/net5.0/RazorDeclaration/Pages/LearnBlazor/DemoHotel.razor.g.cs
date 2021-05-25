@@ -13,77 +13,77 @@ namespace HiddenVilla_Server.Pages.LearnBlazor
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 1 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 2 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 3 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 4 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 5 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 6 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 7 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 8 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 9 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 10 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 2 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
 using Model;
 
 #line default
@@ -98,7 +98,7 @@ using Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 23 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 38 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
       
 
 
@@ -112,7 +112,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 30 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 45 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                                              
     {
         base.OnInitialized();　　　　
@@ -121,7 +121,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 32 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 47 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                         
 
         RoomsList.Add(new BlazorRoom() 
@@ -130,7 +130,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 34 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 49 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                       
         {
             Id = 201, 
@@ -139,9 +139,9 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 36 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 51 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                       
-            RoomName = "Villa Suite One Bed Room",
+            RoomName = "シングルベッドルーム",
             Price = 399,
             IsActive = true,
             RoomProps = new List<BlazorRoomProp> 
@@ -150,9 +150,9 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 40 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 55 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                  
-                                                            {
+                         {
                          new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
                          new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
 
@@ -165,7 +165,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 48 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 63 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                       
                         {
                             Id = 301, 
@@ -174,9 +174,9 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 50 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 65 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                       
-                            RoomName = "Villa Suite Tow Bed Room",
+                            RoomName = "ダブルベッドルーム",
                             Price = 699,
                             IsActive = true,
                             RoomProps = new List<BlazorRoomProp> 
@@ -185,7 +185,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 54 "\\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 69 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                                  
                                                                                             {
                            new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},

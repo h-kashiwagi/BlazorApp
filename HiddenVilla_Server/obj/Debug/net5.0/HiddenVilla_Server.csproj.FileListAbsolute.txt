@@ -180,3 +180,7 @@ C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Hid
 \\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\HiddenVilla_Server.pdb
 \\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\HiddenVilla_Server.genruntimeconfig.cache
 \\192.168.152.3\部門\０３FPソリューション部\１０請負チーム\１０社内業務\０２プログラム教育\１１インターンシップ_202103\04.NET5学習\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\HiddenVilla_Server.csproj.CopyComplete
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\BindProp.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\DemoHotel.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\BindProp.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\DemoHotel.razor.g.cs
