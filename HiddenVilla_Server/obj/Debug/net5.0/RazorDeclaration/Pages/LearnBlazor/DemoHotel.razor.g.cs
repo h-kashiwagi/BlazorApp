@@ -89,6 +89,13 @@ using Model;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/demoHotel")]
     public partial class DemoHotel : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,7 +105,7 @@ using Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 19 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
       
 
 
@@ -112,7 +119,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 45 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 26 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                                              
     {
         base.OnInitialized();　　　　
@@ -121,7 +128,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 47 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 28 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                         
 
         RoomsList.Add(new BlazorRoom() 
@@ -130,7 +137,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 49 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 30 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                       
         {
             Id = 201, 
@@ -139,7 +146,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 51 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 32 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                       
             RoomName = "シングルベッドルーム",
             Price = 399,
@@ -150,50 +157,50 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 55 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 36 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                  
                          {
                          new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
                          new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
 
-                         }
-                        });
+                          }
+             });
 
-                        RoomsList.Add(new BlazorRoom() 
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 63 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                                                      
-                        {
-                            Id = 301, 
+         RoomsList.Add(new BlazorRoom() 
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 65 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                                                      
-                            RoomName = "ダブルベッドルーム",
-                            Price = 699,
-                            IsActive = true,
-                            RoomProps = new List<BlazorRoomProp> 
+#line 44 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                       
+         {
+             Id = 301, 
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 69 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                                                                                 
-                                                                                            {
+#line 46 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                       
+             RoomName = "ダブルベッドルーム",
+             Price = 699,
+             IsActive = true,
+             RoomProps = new List<BlazorRoomProp> 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 50 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                                                  
+                          {
                            new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},
                            new Model.BlazorRoomProp{Id=2,Name="占有率",Value="6"},
 
                           }
-                                        });
-                                    }
+         });
+     }
 
 #line default
 #line hidden

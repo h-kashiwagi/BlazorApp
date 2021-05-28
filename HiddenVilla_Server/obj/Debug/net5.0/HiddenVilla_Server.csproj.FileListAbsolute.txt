@@ -184,3 +184,7 @@ C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Raz
 C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\DemoHotel.razor.g.cs
 C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\BindProp.razor.g.cs
 C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\DemoHotel.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\EditDeleteButton.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\EditDeleteButton.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor.g.cs
+C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor.g.cs
