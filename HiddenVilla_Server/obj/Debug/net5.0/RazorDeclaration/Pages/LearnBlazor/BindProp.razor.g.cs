@@ -13,84 +13,84 @@ namespace HiddenVilla_Server.Pages.LearnBlazor
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 1 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 2 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 3 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 4 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 5 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 6 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 7 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 8 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 9 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 10 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 11 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 2 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
 using Model;
 
 #line default
@@ -105,7 +105,7 @@ using Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 55 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 55 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
       
 
     string SelectedRoomProp = "";
@@ -117,7 +117,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 60 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 60 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                       
     {
         Id = 1, 
@@ -126,7 +126,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 62 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 62 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                 
         RoomName = "Villa Suite",
         Price = 499,
@@ -137,7 +137,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 66 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 66 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                              
        {
             new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="100"},
@@ -155,7 +155,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 77 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 77 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                
                 {
                         Id = 201, 
@@ -164,7 +164,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 79 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 79 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                   
                         RoomName = "Villa Suite One Bed Room",
                         Price = 399,
@@ -175,7 +175,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 83 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 83 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                                              
                         {
                           new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
@@ -190,7 +190,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 91 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 91 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                  
                   {
                          Id = 301, 
@@ -199,7 +199,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 93 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 93 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                    
                          RoomName = "Villa Suite Tow Bed Room",
                          Price = 699,
@@ -210,7 +210,7 @@ using Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 97 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
+#line 97 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                                               
                         {
                               new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},

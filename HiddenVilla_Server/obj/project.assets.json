@@ -8,25 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\h-kashiwagi\\.nuget\\packages\\": {},
+    "C:\\Users\\KASHIWAGI HIROMITU\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
+      "projectUniqueName": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
       "projectName": "HiddenVilla_Server",
-      "projectPath": "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
-      "packagesPath": "C:\\Users\\h-kashiwagi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\obj\\",
+      "projectPath": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
+      "packagesPath": "C:\\Users\\KASHIWAGI HIROMITU\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\h-kashiwagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KASHIWAGI HIROMITU\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
