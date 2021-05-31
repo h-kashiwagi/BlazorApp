@@ -1,29 +1,29 @@
 ﻿@using HiddenVilla_Server.Model
 
-<h3>IndividualRoom</h3>
+
 <div class="bg-light border p-2 col-5 offset-1">
     @*bg-light=背景色、border=線、p-2=パディング,col-5=色（グレー）*@
-    <h4 class="text-secondary">部屋 - @room.Id</h4>　@*text-secondary＝文字の色（グレー）*@
+    <h4 class="text-secondary">部屋 - @Room.Id</h4>　@*text-secondary＝文字の色（グレー）*@
 
-    @room.RoomName<br />
-    @room.Price.ToString("c")<br />　　@*.ToString("c")=\*@
-    <input type="checkbox" @bind-value="room.IsActive" 　checked="@(room.IsActive?"checked":null)" /> &nbsp;有効<br />
-    <span>こちらの部屋は @(room.IsActive?"有効":"無効")</span>
+    @Room.RoomName<br />
+    @Room.Price.ToString("c")<br />　　@*.ToString("c")=\*@
+    <input type="checkbox" @bind-value="Room.IsActive" 　checked="@(Room.IsActive?"checked":null)" /> &nbsp;有効<br />
+    <span>こちらの部屋は @(Room.IsActive?"有効":"無効")</span>
 
-    @if (room.IsActive)@*Trueの場合*@
+    @if (Room.IsActive)@*Trueの場合*@
     {
-        @foreach (var roomProp in room.RoomProps)@*BlazorRoomのBlazorRoomPropリストの中から取り出す*@
+        @foreach (var roomProp in Room.RoomProps)@*BlazorRoomのBlazorRoomPropリストの中から取り出す*@
         {
             <p>@roomProp.Name：@roomProp.Value</p>
         }
     }
 
-    <EditDeleteButton IsAdmin="true"></EditDeleteButton>  @*falseだと表示されない*@
+    <EditDeleteButton IsAdmin="false"></EditDeleteButton>  @*falseだと表示されない*@
 
 </div>
 
 @code {
 
     [Parameter]
-    public BlazorRoom room { get; set; }
+    public BlazorRoom Room { get; set; }  @*クラス型のプロパティ*@
 }

@@ -108,7 +108,7 @@ using HiddenVilla_Server.Model;
        
 
     [Parameter]
-    public BlazorRoom room { get; set; }
+    public BlazorRoom Room { get; set; }  
 
 #line default
 #line hidden
