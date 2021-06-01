@@ -1,0 +1,17 @@
+﻿@using HiddenVilla_Server.Model
+
+
+<div class="bg-light border p-2 col-5 offset-1">
+    @*bg-light=背景色、border=線、p-2=パディング,col-5=色（グレー）*@
+    <h4 class="text-secondary"> アメニティ- @Amenities.Id</h4>　@*text-secondary＝文字の色（グレー）*@
+
+    @Amenities.Name<br />
+    @Amenities.Description<br />
+
+</div>
+
+@code {
+
+    [Parameter]
+    public BlazorAmenities Amenities { get; set; }  @*DemoHotel.razorのListから取り出してる*@
+}

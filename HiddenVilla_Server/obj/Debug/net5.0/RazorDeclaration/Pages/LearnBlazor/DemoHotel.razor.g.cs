@@ -105,7 +105,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 35 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
       
 
 
@@ -120,81 +120,81 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 27 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 43 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                                              
-{
+    {
     base.OnInitialized();　　　　
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 29 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 45 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                     
 
-RoomsList.Add(new BlazorRoom() 
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 31 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                              
-{
-    Id = 201, 
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 33 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                              
-RoomName = "シングルベッドルーム",
-Price = 399,
-IsActive = true,
-RoomProps = new List<BlazorRoomProp> 
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 37 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                                                     
-                         {
-                         new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
-                         new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
-
-                          }
-});
-
-RoomsList.Add(new BlazorRoom() 
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 45 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                              
-{
-    Id = 301, 
+    RoomsList.Add(new BlazorRoom() 
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 47 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                              
-RoomName = "ダブルベッドルーム",
-Price = 699,
-IsActive = true,
-RoomProps = new List<BlazorRoomProp> 
+                                                                  
+    {
+         Id = 201, 
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 51 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
-                                                                                     
+#line 49 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                   
+         RoomName = "シングルベッドルーム",
+         Price = 399,
+         IsActive = true,
+         RoomProps = new List<BlazorRoomProp> 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 53 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                                              
+                         {
+                         new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
+                         new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
+
+                          }
+     });
+
+     RoomsList.Add(new BlazorRoom() 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 61 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                   
+     {
+          Id = 301, 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 63 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                    
+          RoomName = "ダブルベッドルーム",
+          Price = 699,
+          IsActive = true,
+          RoomProps = new List<BlazorRoomProp> 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 67 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+                                                                                               
                           {
                            new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},
                            new Model.BlazorRoomProp{Id=2,Name="占有率",Value="6"},
@@ -204,24 +204,24 @@ RoomProps = new List<BlazorRoomProp>
 
     AmenitiesList.Add(new BlazorAmenities()
     {
-        Id =111,
-        Name = "ジム",
-        Description = "ジムの利用可能時間：7am to 10pm"
+          Id =111,
+          Name = "ジム",
+          Description = "ジムの利用可能時間：7am to 10pm"
     });
 
     AmenitiesList.Add(new BlazorAmenities()
     {
-        Id = 222,
-        Name = "プール",
-        Description = "プールのオープン時間：6am to 10pm"
+          Id = 222,
+          Name = "プール",
+          Description = "プールのオープン時間：6am to 10pm"
 
     });
 
     AmenitiesList.Add(new BlazorAmenities()
     {
-        Id = 333,
-        Name = "朝食：フリー",
-        Description = "朝食の時間：7am to 10am"
+          Id = 333,
+          Name = "朝食",
+          Description = "朝食の時間：7am to 10am"
     });
 
 }
