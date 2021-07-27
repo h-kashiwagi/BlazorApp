@@ -129,7 +129,7 @@ using Model;
 #line 62 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                 
         RoomName = "Villa Suite",
-        Price = 499,
+        Price = 40000,
         IsActive = true,
         RoomProps = new List<BlazorRoomProp> 
 
@@ -167,7 +167,7 @@ using Model;
 #line 79 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                   
                         RoomName = "Villa Suite One Bed Room",
-                        Price = 399,
+                        Price = 36000,
                         IsActive = true,
                         RoomProps = new List<BlazorRoomProp> 
 
@@ -202,7 +202,7 @@ using Model;
 #line 93 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\BindProp.razor"
                                                                                    
                          RoomName = "Villa Suite Tow Bed Room",
-                         Price = 699,
+                         Price = 65000,
                          IsActive = true,
                          RoomProps = new List<BlazorRoomProp> 
 

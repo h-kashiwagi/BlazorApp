@@ -9,9 +9,9 @@
     <h2 class="bg-light border p-2">
         ファーストルーム
     </h2>
-    Room:@Room.RoomName
+    部屋:@Room.RoomName
     <br />
-    Price:@Room.Price
+    価格:@Room.Price
     <br />
 
     <input type="number" @bind-value="Room.Price" @bind-value:event="oninput" />
@@ -61,7 +61,7 @@
     {
         Id = 1, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
         RoomName = "Villa Suite",
-        Price = 499,
+        Price = 40000,
         IsActive = true,
         RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
        {
@@ -78,7 +78,7 @@
                 {
                         Id = 201, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
                         RoomName = "Villa Suite One Bed Room",
-                        Price = 399,
+                        Price = 36000,
                         IsActive = true,
                         RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
                         {
@@ -92,7 +92,7 @@
                   {
                          Id = 301, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
                          RoomName = "Villa Suite Tow Bed Room",
-                         Price = 699,
+                         Price = 65000,
                          IsActive = true,
                          RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
                         {

@@ -1,31 +1,27 @@
 ﻿@page "/demoHotel"
 @using Model
-@using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent
+@using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent　　@*コンポーネントの参照によって部品化したファイルを読み込む*@
 
-<h1>ホテルの部屋とアメニティです！</h1>
-<div class="border p-2 mt-2" style="background-color:azure">
+<h1>部屋の種類・アメニティ</h1>
+<div class="border p-2 mt-2" style="background-color:lightgrey">
     @*m=マージン、mt=マージントップ、style="background-color:azureは薄い水色"*@
 
     <h2 class="text-info">部屋一覧</h2> @*text-infoはbackground-colorと同じになる*@
-    <div class="row container">
+<div class="row container">
 
-        <div class="col-12">
-            <h4 class="text-info">ホテルの部屋</h4>
-        </div>
-
-        @foreach (var room in RoomsList)@*roomがBlazorRoom*@ 
-         {
-　　　　　<IndividualRoom Room="@room"></IndividualRoom>
-     　　}
-
-        <div class="col-12 mt-4">
-            <h4 class="text-info">ホテルのアメニティ</h4>
-　　　　</div>
-        @foreach (var amenity in AmenitiesList)@*roomがBlazorRoom*@ 
-         {
-           <IndividualAmenities Amenities="@amenity"></IndividualAmenities>
-          }
+    <div class="col-12">
+        <h4 class="text-info">ホテルの部屋</h4>
     </div>
+
+    @foreach (var room in RoomsList)@*roomがBlazorRoom*@ {
+    <IndividualRoom Room="@room"></IndividualRoom>}
+
+    <div class="col-12 mt-4">
+        <h4 class="text-info">ホテルのアメニティ</h4>
+    </div>
+    @foreach (var amenity in AmenitiesList)@*roomがBlazorRoom*@ {
+    <IndividualAmenities Amenities="@amenity"></IndividualAmenities>}
+</div>
 </div>
 
  
@@ -35,6 +31,11 @@
 
 
 @code{
+
+
+
+
+
 
 
     List<BlazorRoom> RoomsList = new List<BlazorRoom>();
@@ -50,7 +51,7 @@
     {
          Id = 201, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
          RoomName = "シングルベッドルーム",
-         Price = 399,
+         Price = 36000,
          IsActive = true,
          RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
                          {
@@ -64,7 +65,7 @@
      {
           Id = 301, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
           RoomName = "ダブルベッドルーム",
-          Price = 699,
+          Price = 65000,
           IsActive = true,
           RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
                           {
