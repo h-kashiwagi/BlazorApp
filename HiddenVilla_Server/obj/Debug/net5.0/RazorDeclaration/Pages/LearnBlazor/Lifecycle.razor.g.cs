@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace HiddenVilla_Server.Shared
+namespace HiddenVilla_Server.Pages.LearnBlazor
 {
     #line hidden
     using System;
@@ -89,7 +89,8 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Lifecycle")]
+    public partial class Lifecycle : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,15 +98,64 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Shared\NavMenu.razor"
+#line 22 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\Lifecycle.razor"
        
-    private bool collapseNavMenu = true;
+    private int currentCount = 0;
+    List<string> EventType = new List<string>();
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
+    private void IncrementCount()
     {
-        collapseNavMenu = !collapseNavMenu;
+        currentCount++;
+    }
+
+    protected override void OnInitialized()
+    {
+        EventType.Add("OnInitializedAsync is called");
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        EventType.Add("OnInitializedAsync is called");
+        await Task.Delay(1000);
+    }
+    //このプログラムだと、currentCountに0が設定されてから
+    //パラメーターが変更される度にコールバックとして呼び出される
+    //パラメーターを受けてからなので表示される動作が少し遅い
+    protected override void OnParametersSet()
+    {
+        EventType.Add("OnParmeterSet is called");
+    }
+    //パメーターを受けてからなので表示される動作が少し遅い
+    protected override async Task OnParametersSetAsync()
+    {
+        EventType.Add("OnParametersSetAsync is called");
+        await Task.Delay(1000);
+    }
+    //レンダリング後に呼び出される
+    //引数のfirstRenderにはtrueが渡される
+    protected override void OnAfterRender(bool firstRender)
+    {   //ここにブレークポイントをおいて実行するとcurrentCountは0になる
+        //ボタンをクリックして続行を押すと112になる
+        if(firstRender)
+        {
+            currentCount = 111;
+        }
+        else
+        {
+            currentCount = 999;
+        }
+        EventType.Add("OnAfterRender is called");
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        EventType.Add("OnAfterRenderAsync is called");
+        await Task.Delay(1000); await Task.Delay(1000);
+    }
+    // 呼び出し順は OnInitialized, OnAfterRender, OnParametersSet, ShouldRender, OnAfterRender の順
+
+    protected override bool ShouldRender()
+    {
+        EventType.Add("ShouldRender is called");
+        return true;
     }
 
 #line default

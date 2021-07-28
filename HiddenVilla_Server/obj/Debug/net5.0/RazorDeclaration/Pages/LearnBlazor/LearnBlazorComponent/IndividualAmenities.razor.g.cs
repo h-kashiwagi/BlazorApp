@@ -113,6 +113,16 @@ using HiddenVilla_Server.Model;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
+                                                                                    
+//7/27
+[Parameter]
+public EventCallback<string> OnAmenitySelection { get; set; }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace HiddenVilla_Server.Shared
+namespace HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent
 {
     #line hidden
     using System;
@@ -89,7 +89,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class LifecycleComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,15 +97,22 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Shared\NavMenu.razor"
+#line 16 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\LifecycleComponent.razor"
        
-    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    [Parameter]
+    public int CountValue { get; set; } //ボタンをクリックしてcurrentCountの値が増加するごとに値を受け取る→するとOnParametersSet()が実行する
+    List<string> EventType = new List<string>();
 
-    private void ToggleNavMenu()
+
+    protected override void OnInitialized()
     {
-        collapseNavMenu = !collapseNavMenu;
+        EventType.Add("Child OnInitializedAsync is called");
+    }
+
+    protected override void OnParametersSet()
+    {
+        EventType.Add("Child OnParameterSet is called");
     }
 
 #line default

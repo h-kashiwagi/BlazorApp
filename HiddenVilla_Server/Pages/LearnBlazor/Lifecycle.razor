@@ -1,0 +1,80 @@
+﻿@page "/Lifecycle"
+
+<h3>Lifecycle</h3>
+
+<div class="border">
+    <LifecycleComponent CountValue="@currentCount"></LifecycleComponent>
+</div>
+
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<component type="typeof(App)" render-mode="ServerPrerendered" />
+<hr />
+@foreach (var item in EventType)
+{
+    @item
+    <hr />
+}
+
+
+@code {
+    private int currentCount = 0;
+    List<string> EventType = new List<string>();
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    protected override void OnInitialized()
+    {
+        EventType.Add("OnInitializedAsync is called");
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        EventType.Add("OnInitializedAsync is called");
+        await Task.Delay(1000);
+    }
+    //このプログラムだと、currentCountに0が設定されてから
+    //パラメーターが変更される度にコールバックとして呼び出される
+    //パラメーターを受けてからなので表示される動作が少し遅い
+    protected override void OnParametersSet()
+    {
+        EventType.Add("OnParmeterSet is called");
+    }
+    //パメーターを受けてからなので表示される動作が少し遅い
+    protected override async Task OnParametersSetAsync()
+    {
+        EventType.Add("OnParametersSetAsync is called");
+        await Task.Delay(1000);
+    }
+    //レンダリング後に呼び出される
+    //引数のfirstRenderにはtrueが渡される
+    protected override void OnAfterRender(bool firstRender)
+    {   //ここにブレークポイントをおいて実行するとcurrentCountは0になる
+        //ボタンをクリックして続行を押すと112になる
+        if(firstRender)
+        {
+            currentCount = 111;
+        }
+        else
+        {
+            currentCount = 999;
+        }
+        EventType.Add("OnAfterRender is called");
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        EventType.Add("OnAfterRenderAsync is called");
+        await Task.Delay(1000); await Task.Delay(1000);
+    }
+    // 呼び出し順は OnInitialized, OnAfterRender, OnParametersSet, ShouldRender, OnAfterRender の順
+
+    protected override bool ShouldRender()
+    {
+        EventType.Add("ShouldRender is called");
+        return true;
+    }
+}s

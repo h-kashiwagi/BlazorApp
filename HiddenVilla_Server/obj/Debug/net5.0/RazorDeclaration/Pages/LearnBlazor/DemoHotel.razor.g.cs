@@ -105,8 +105,13 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 33 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
       
+
+
+
+
+
 
 
     List<BlazorRoom> RoomsList = new List<BlazorRoom>();
@@ -120,7 +125,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 45 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 46 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                                              
     {
     base.OnInitialized();　　　　
@@ -129,7 +134,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 47 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 48 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                     
 
     RoomsList.Add(new BlazorRoom() 
@@ -138,7 +143,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 49 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 50 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                   
     {
          Id = 201, 
@@ -147,7 +152,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 51 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 52 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                    
          RoomName = "シングルベッドルーム",
          Price = 36000,
@@ -158,7 +163,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 55 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 56 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                               
                          {
                          new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
@@ -173,7 +178,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 63 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 64 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                    
      {
           Id = 301, 
@@ -182,7 +187,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 65 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 66 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                     
           RoomName = "ダブルベッドルーム",
           Price = 65000,
@@ -193,7 +198,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 #line hidden
 #nullable disable
 #nullable restore
-#line 69 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
+#line 70 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\DemoHotel.razor"
                                                                                                
                           {
                            new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},
