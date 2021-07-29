@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\HiddenVilla_Server.csproj": {}
+    "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\HiddenVilla_Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\HiddenVilla_Server.csproj": {
+    "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\HiddenVilla_Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
+        "projectUniqueName": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
         "projectName": "HiddenVilla_Server",
-        "projectPath": "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
-        "packagesPath": "C:\\Users\\h-kashiwagi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h-kashiwagi\\Desktop\\HiddenVilla\\HiddenVilla_Server\\obj\\",
+        "projectPath": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\HiddenVilla_Server.csproj",
+        "packagesPath": "C:\\Users\\KASHIWAGI HIROMITU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\HiddenVilla_Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\h-kashiwagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\KASHIWAGI HIROMITU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -60,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

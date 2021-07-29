@@ -260,3 +260,9 @@ C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Raz
 C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\Lifecycle.razor.g.cs
 C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\LifecycleComponent.razor.g.cs
 C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\Lifecycle.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\LifecycleComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\Lifecycle.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\LifecycleComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\Lifecycle.razor.g.cs

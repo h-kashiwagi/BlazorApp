@@ -13,78 +13,85 @@ namespace HiddenVilla_Server.Pages.LearnBlazor
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 1 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 2 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 3 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 4 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 5 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 6 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 7 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 8 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 9 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 10 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\_Imports.razor"
+#line 11 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\Lifecycle.razor"
+using System.Threading;
 
 #line default
 #line hidden
@@ -98,10 +105,12 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 22 "C:\Users\h-kashiwagi\Desktop\HiddenVilla\HiddenVilla_Server\Pages\LearnBlazor\Lifecycle.razor"
+#line 24 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\Lifecycle.razor"
        
     private int currentCount = 0;
     List<string> EventType = new List<string>();
+    private int Count { get; set; } = 5;  //初期値が5
+
 
     private void IncrementCount()
     {
@@ -115,7 +124,7 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
     protected override async Task OnInitializedAsync()
     {
         EventType.Add("OnInitializedAsync is called");
-        await Task.Delay(1000);
+        //await Task.Delay(1000);
     }
     //このプログラムだと、currentCountに0が設定されてから
     //パラメーターが変更される度にコールバックとして呼び出される
@@ -128,13 +137,15 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
     protected override async Task OnParametersSetAsync()
     {
         EventType.Add("OnParametersSetAsync is called");
-        await Task.Delay(1000);
+        //await Task.Delay(1000);
     }
     //レンダリング後に呼び出される
     //引数のfirstRenderにはtrueが渡される
     protected override void OnAfterRender(bool firstRender)
     {   //ここにブレークポイントをおいて実行するとcurrentCountは0になる
         //ボタンをクリックして続行を押すと112になる
+        //最初に開いたときは0でボタンクリックで112になるはずなのにいきなり111→999になる
+        //おそらく最初のページを読み込んだ際のレンダーでtrueが渡されて起動してしまう
         if(firstRender)
         {
             currentCount = 111;
@@ -155,7 +166,21 @@ using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
     protected override bool ShouldRender()
     {
         EventType.Add("ShouldRender is called");
+        //trueならUIをrefreshする
         return true;
+    }
+    void StartCountdown()
+    {
+        var timer = new Timer(TimeCallBack, null, 1000, 1000);
+    }
+
+    void TimeCallBack(object state)
+    {
+        if (Count > 0)
+        {
+            Count--;
+            InvokeAsync(StateHasChanged);
+        }
     }
 
 #line default

@@ -1,4 +1,5 @@
 ﻿@page "/Lifecycle"
+@using System.Threading
 
 <h3>Lifecycle</h3>
 
@@ -10,6 +11,7 @@
 <p>Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<br />@Count<button @onclick=StartCountdown>StartCountdown</button>　　@*@CountはプロパティでStartCountdownはメソッド*@
 <component type="typeof(App)" render-mode="ServerPrerendered" />
 <hr />
 @foreach (var item in EventType)
@@ -22,6 +24,8 @@
 @code {
     private int currentCount = 0;
     List<string> EventType = new List<string>();
+    private int Count { get; set; } = 5;  //初期値が5
+
 
     private void IncrementCount()
     {
@@ -35,7 +39,7 @@
     protected override async Task OnInitializedAsync()
     {
         EventType.Add("OnInitializedAsync is called");
-        await Task.Delay(1000);
+        //await Task.Delay(1000);
     }
     //このプログラムだと、currentCountに0が設定されてから
     //パラメーターが変更される度にコールバックとして呼び出される
@@ -48,13 +52,15 @@
     protected override async Task OnParametersSetAsync()
     {
         EventType.Add("OnParametersSetAsync is called");
-        await Task.Delay(1000);
+        //await Task.Delay(1000);
     }
     //レンダリング後に呼び出される
     //引数のfirstRenderにはtrueが渡される
     protected override void OnAfterRender(bool firstRender)
     {   //ここにブレークポイントをおいて実行するとcurrentCountは0になる
         //ボタンをクリックして続行を押すと112になる
+        //最初に開いたときは0でボタンクリックで112になるはずなのにいきなり111→999になる
+        //おそらく最初のページを読み込んだ際のレンダーでtrueが渡されて起動してしまう
         if(firstRender)
         {
             currentCount = 111;
@@ -75,6 +81,20 @@
     protected override bool ShouldRender()
     {
         EventType.Add("ShouldRender is called");
+        //trueならUIをrefreshする
         return true;
     }
-}s
+    void StartCountdown()
+    {
+        var timer = new Timer(TimeCallBack, null, 1000, 1000);
+    }
+
+    void TimeCallBack(object state)
+    {
+        if (Count > 0)
+        {
+            Count--;
+            InvokeAsync(StateHasChanged);
+        }
+    }
+}

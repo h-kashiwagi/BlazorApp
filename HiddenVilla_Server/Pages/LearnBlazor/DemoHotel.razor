@@ -11,6 +11,7 @@
 
     <div class="col-12">
         <h4 class="text-info">ホテルの部屋</h4>
+        <span>Rooms Selected = @SelectedRooms</span>
     </div>
 
     @foreach (var room in RoomsList)@*roomがBlazorRoom*@ {
@@ -36,7 +37,7 @@
 
 
 
-
+    public int SelectedRooms { get; set; } = 0;
 
     List<BlazorRoom> RoomsList = new List<BlazorRoom>();
     List<BlazorAmenities> AmenitiesList = new List<BlazorAmenities>();
@@ -44,59 +45,69 @@
 
 
     protected override void OnInitialized()　@*OnInitializedメソッドをオーバーライドする(基底クラスのcomponentBaseに実装されているメソッドでオーバーライドで実装して使用する)*@
-    {
+{
     base.OnInitialized();　　　　@*baseは派生クラスから基底クラスのメソッドにアクセスするためにつかう*@
 
-    RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
-    {
-         Id = 201, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
-         RoomName = "シングルベッドルーム",
-         Price = 36000,
-         IsActive = true,
-         RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
+RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
+{
+    Id = 201, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
+RoomName = "シングルベッドルーム",
+Price = 36000,
+IsActive = true,
+RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
                          {
                          new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="330"},
                          new Model.BlazorRoomProp{Id=2,Name="占有率",Value="4"},
 
                           }
-     });
+});
 
-     RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
-     {
-          Id = 301, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
-          RoomName = "ダブルベッドルーム",
-          Price = 65000,
-          IsActive = true,
-          RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
+RoomsList.Add(new BlazorRoom() @*モデルクラスをインスタンス化して、プロパティに値を代入*@
+{
+    Id = 301, @*インスタンス化と同時にプロパティに値をセット（本来はインスタンスの変数名.プロパティ名）*@
+RoomName = "ダブルベッドルーム",
+Price = 65000,
+IsActive = true,
+RoomProps = new List<BlazorRoomProp> @*リスト型のプロパティはリストをインスタンス化を作成して、複数のオブジェクトを代入していく*@
                           {
                            new Model.BlazorRoomProp{Id=1,Name="平方フィート",Value="150"},
                            new Model.BlazorRoomProp{Id=2,Name="占有率",Value="6"},
 
                           }
-}); 
+});
 
     AmenitiesList.Add(new BlazorAmenities()
     {
-          Id =111,
-          Name = "ジム",
-          Description = "ジムの利用可能時間：7am to 10pm"
+        Id = 111,
+        Name = "ジム",
+        Description = "ジムの利用可能時間：7am to 10pm"
     });
 
     AmenitiesList.Add(new BlazorAmenities()
     {
-          Id = 222,
-          Name = "プール",
-          Description = "プールのオープン時間：6am to 10pm"
+        Id = 222,
+        Name = "プール",
+        Description = "プールのオープン時間：6am to 10pm"
 
     });
 
     AmenitiesList.Add(new BlazorAmenities()
     {
-          Id = 333,
-          Name = "朝食",
-          Description = "朝食の時間：7am to 10am"
+        Id = 333,
+        Name = "朝食",
+        Description = "朝食の時間：7am to 10am"
     });
-
-}
+    }
+    protected void RoomSelectionCounterChanged(bool isRoomSelected)
+    {
+    if (isRoomSelected)
+    {
+        SelectedRooms++;
+    }
+    else
+    {
+        SelectedRooms--;
+    }
+    }
 }
 
