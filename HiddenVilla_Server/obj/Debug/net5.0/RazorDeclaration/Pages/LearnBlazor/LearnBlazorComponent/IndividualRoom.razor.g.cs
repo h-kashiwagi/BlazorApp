@@ -13,84 +13,84 @@ namespace HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 1 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 2 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 3 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 4 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 5 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 6 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 7 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 8 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 9 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 10 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 11 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor"
+#line 1 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor"
 using HiddenVilla_Server.Model;
 
 #line default
@@ -104,11 +104,34 @@ using HiddenVilla_Server.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor"
+#line 26 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor"
        
 
     [Parameter]
-    public BlazorRoom Room { get; set; }  
+    public BlazorRoom Room { get; set; }
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 29 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor"
+                                                                  
+
+    [Parameter]
+    public EventCallback<bool> OnRoomCheckBoxSelection { get; set; } 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 32 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualRoom.razor"
+                                                                                                       
+
+    //チェックボックスのonchangeによって呼び出される
+    protected async Task RoomCheckBoxSelectionChanged(ChangeEventArgs e)
+    {
+        await OnRoomCheckBoxSelection.InvokeAsync((bool)e.Value); //OnRoomCheckBoxSelectionに値が入る
+    }
 
 #line default
 #line hidden

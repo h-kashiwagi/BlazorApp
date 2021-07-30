@@ -5,6 +5,7 @@
     @*bg-light=背景色、border=線、p-2=パディング,col-5=色（グレー）*@
     <h4 class="text-secondary">部屋 - @Room.Id</h4>　@*text-secondary＝文字の色（グレー）*@
 
+    <input type="checkbox" @onchange="RoomCheckBoxSelectionChanged" />
     @Room.RoomName<br />
     @Room.Price.ToString("c")<br />　　@*.ToString("c")=\*@
     <input type="checkbox" @bind-value="Room.IsActive" 　checked="@(Room.IsActive?"checked":null)" /> &nbsp;有効<br />
@@ -16,14 +17,23 @@
         {
             <p>@roomProp.Name：@roomProp.Value</p>
         }
-     }
+    }
 
-      <EditDeleteButton IsAdmin="false"></EditDeleteButton>  @*IsAdminはEditDleteButton.razor　falseだと表示されない*@
+    <EditDeleteButton IsAdmin="false"></EditDeleteButton>  @*IsAdminはEditDleteButton.razor　falseだと表示されない*@
 
 </div>
 
 @code {
 
     [Parameter]
-    public BlazorRoom Room { get; set; }  @*クラス型のプロパティ*@
+    public BlazorRoom Room { get; set; }@*Model.BlazorRoomのプロパティ*@
+
+    [Parameter]
+    public EventCallback<bool> OnRoomCheckBoxSelection { get; set; } @*="RoomSelectionCounterChanged"*@
+
+    //チェックボックスのonchangeによって呼び出される
+    protected async Task RoomCheckBoxSelectionChanged(ChangeEventArgs e)
+    {
+        await OnRoomCheckBoxSelection.InvokeAsync((bool)e.Value); //OnRoomCheckBoxSelectionに値が入る
+    }
 }
