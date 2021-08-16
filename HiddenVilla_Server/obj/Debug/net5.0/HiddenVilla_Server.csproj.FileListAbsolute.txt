@@ -338,3 +338,15 @@ C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\ref\H
 C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\HiddenVilla_Server.pdb
 C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\HiddenVilla_Server.genruntimeconfig.cache
 C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\HiddenVilla_Server.csproj.CopyComplete
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\ChildComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\ParentComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\ChildComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\ParentComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\AnotherChildComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\AnotherChildComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnBlazorComponent\GrandChildComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnBlazorComponent\GrandChildComponent.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnRouting.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnRouting.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\RazorDeclaration\Pages\LearnBlazor\LearnAdvanceRouting.razor.g.cs
+C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\obj\Debug\net5.0\Razor\Pages\LearnBlazor\LearnAdvanceRouting.razor.g.cs

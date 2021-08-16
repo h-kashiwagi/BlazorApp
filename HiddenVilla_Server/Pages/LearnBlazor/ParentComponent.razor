@@ -1,0 +1,46 @@
+﻿@page "/ParentComponent"
+
+
+
+<h1 class="text-danger">Parent Child Component</h1>
+<CascadingValue Value="@messageForGrandChild" Name="MessageFromGrandParent">
+    <CascadingValue Value="@LuckyNumber" Name="GrandParentsLuckyNumber">
+        <ChildComponent OnClickBtnMethod="ShowMessage" Title="This title is passed as parameter from Parent Component">
+            @*Titleプロパティにテキストがセットされている？*@
+
+            <ChildContent>Render Fragement From Parent! WooHOO!</ChildContent>
+            <DangerChildContent>Danger Content from Render Fragement! WooHOO!</DangerChildContent>
+
+        </ChildComponent>
+    </CascadingValue>
+</CascadingValue>
+@*コンポーネントのタグを使用する度に、パラメータにセットされる値が変わる*@
+
+<AnotherChildComponent placeholder="Placeholder default"></AnotherChildComponent>
+
+<p><b>@messageText</b></p>
+
+
+@code {
+
+    /*
+    public Dictionary<string, object> InputAttributesFormParent { get; set; } = new Dictionary<string, object>() @*こちらが優先される*@
+    {
+        {"required","required" },
+        {"placeholder","Enter the Room Name From Parent" },
+        {"maxlength",5 }
+
+    };
+    */
+
+    private string messageForGrandChild = "This is amessage from Grand Parent";
+    public string LuckyNumber { get; set; } = "7";
+    private string messageText = "";
+
+    private void ShowMessage(MouseEventArgs e)
+    {
+        messageText = "Blazzing text from parent";
+
+    }
+}
+

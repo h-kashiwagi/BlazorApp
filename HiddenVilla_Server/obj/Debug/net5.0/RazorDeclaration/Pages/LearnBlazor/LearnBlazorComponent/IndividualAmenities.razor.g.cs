@@ -13,84 +13,84 @@ namespace HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 1 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 2 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 3 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 4 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 5 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 6 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 7 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 8 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 9 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 10 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
+#line 11 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\_Imports.razor"
 using HiddenVilla_Server.Pages.LearnBlazor.LearnBlazorComponent;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
+#line 1 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
 using HiddenVilla_Server.Model;
 
 #line default
@@ -104,7 +104,7 @@ using HiddenVilla_Server.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
+#line 16 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
        
 
     [Parameter]
@@ -114,11 +114,23 @@ using HiddenVilla_Server.Model;
 #line hidden
 #nullable disable
 #nullable restore
-#line 17 "C:\Users\h-kashiwagi\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
+#line 19 "C:\Users\KASHIWAGI HIROMITU\Desktop\BlazorApp\HiddenVilla_Server\Pages\LearnBlazor\LearnBlazorComponent\IndividualAmenities.razor"
                                                                                     
-//7/27
-[Parameter]
-public EventCallback<string> OnAmenitySelection { get; set; }
+
+    //8/9
+    [Parameter]
+    public EventCallback<string> OnAmenitySelection { get; set; }
+
+    //8/13
+    [Parameter]
+    public RenderFragment FirstFragment { get; set; }
+    [Parameter]
+    public RenderFragment SecondFragment { get; set; }
+
+    protected async Task AmenitySelectionChanged(MouseEventArgs e,string name)
+    {
+        await OnAmenitySelection.InvokeAsync((string)name);  //OnAmenitySelectiionに強制的に文字列型になったnameが追加される
+    }
 
 #line default
 #line hidden

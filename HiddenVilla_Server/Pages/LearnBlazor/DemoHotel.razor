@@ -12,6 +12,7 @@
         <div class="col-12">
             <h4 class="text-info">ホテルの部屋</h4>
             <span>選択した部屋 = @SelectedRooms</span>
+     
         </div>
 
         @foreach (var room in RoomsList)@*roomがBlazorRoom*@
@@ -24,8 +25,10 @@
         </div>
         @foreach (var amenity in AmenitiesList)
         {
-            <IndividualAmenities Amenities="@amenity"></IndividualAmenities>
-
+          <IndividualAmenities OnAmenitySelection="AmenitySelectionChanged" Amenities="@amenity"> @*AmenitiesはIndividualAmenitiesのパラメータ*@
+               <FirstFragment>#1</FirstFragment>
+               <SecondFragment>#2</SecondFragment>
+          </IndividualAmenities>
         }
     </div>
     <div class="col-12">
@@ -41,6 +44,7 @@
 
     public int SelectedRooms { get; set; } = 0;
     public string SelectedAmenity { get; set; } = "";
+
     List<BlazorRoom> RoomsList = new List<BlazorRoom>();
     List<BlazorAmenities> AmenitiesList = new List<BlazorAmenities>();
 
@@ -75,46 +79,48 @@
                            new Model.BlazorRoomProp{Id=2,Name="占有率",Value="6"},
 
                           }
-                                        });
+                        });
 
-                                        AmenitiesList.Add(new BlazorAmenities()
-                                        {
-                                            Id = 111,
-                                            Name = "ジム",
-                                            Description = "ジムの利用可能時間：7am to 10pm"
-                                        });
-
-                                        AmenitiesList.Add(new BlazorAmenities()
-                                        {
-                                            Id = 222,
-                                            Name = "プール",
-                                            Description = "プールのオープン時間：6am to 10pm"
-
-                                        });
-
-                                        AmenitiesList.Add(new BlazorAmenities()
-                                        {
-                                            Id = 333,
-                                            Name = "朝食",
-                                            Description = "朝食の時間：7am to 10am"
-                                        });
-                                    }
-
-
-                                    protected void RoomSelectionCounterChanged(bool isRoomSelected)
-                                    {
-                                        if (isRoomSelected)
-                                        {
-                                            SelectedRooms++;
-                                        }
-                                        else
-                                        {
-                                            SelectedRooms--;
-                                        }
-                                    }
-protected void AmenitySelectionChanged(string amenity)
+        AmenitiesList.Add(new BlazorAmenities()
         {
+            Id = 111,
+            Name = "ジム",
+            Description = "ジムの利用可能時間：7am to 10pm"
+        });
 
+        AmenitiesList.Add(new BlazorAmenities()
+        {
+            Id = 222,
+            Name = "プール",
+            Description = "プールのオープン時間：6am to 10pm"
+
+        });
+
+        AmenitiesList.Add(new BlazorAmenities()
+        {
+            Id = 333,
+            Name = "朝食",
+            Description = "朝食の時間：7am to 10am"
+        });
+    }
+
+
+    protected void RoomSelectionCounterChanged(bool isRoomSelected)
+    {
+        if (isRoomSelected)
+        {
+            SelectedRooms++;
         }
+        else
+        {
+            SelectedRooms--;
+        }
+    }
+
+    //AmenityのNameが渡される
+    protected void AmenitySelectionChanged(string amenity)
+    {
+         SelectedAmenity = amenity;
+    }
 }
 

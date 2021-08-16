@@ -1,0 +1,43 @@
+﻿<div>
+    <div class="alert alert-info">@Title</div>
+    <div class="alert alert-success">
+        @if (DangerChildContent == null)
+        {
+        @if (ChildContent == null)
+        {
+            <span>Hello,from Empty Render Fragment</span>
+        }
+        else
+        {
+            <span>@ChildContent</Span>
+        }
+        }
+            else
+            {
+                <span>@DangerChildContent</span>
+            }
+    </div>
+    <button class="btn btn-danger" @onclick="OnClickBtnMethod">Button to be clicked!</button>
+
+    <GrandChildComponent></GrandChildComponent>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }  //Render Fragement From Parent! WooHOO!が格納されている？
+
+    [Parameter]
+    public RenderFragment DangerChildContent { get; set; }
+
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClickBtnMethod { get; set;}
+
+    /*
+    [Parameter]
+    public string MessageForGrandChild { get; set; }  //ParentComponentから値が渡されてくる
+    */
+}
