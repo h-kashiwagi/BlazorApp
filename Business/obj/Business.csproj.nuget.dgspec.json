@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\Business\\Business.csproj": {}
+    "C:\\Users\\h-kashiwagi\\Desktop\\BlazorApp\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\Business\\Business.csproj": {
+    "C:\\Users\\h-kashiwagi\\Desktop\\BlazorApp\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\h-kashiwagi\\Desktop\\BlazorApp\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\KASHIWAGI HIROMITU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KASHIWAGI HIROMITU\\Desktop\\BlazorApp\\Business\\obj\\",
+        "projectPath": "C:\\Users\\h-kashiwagi\\Desktop\\BlazorApp\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\h-kashiwagi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h-kashiwagi\\Desktop\\BlazorApp\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\KASHIWAGI HIROMITU\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h-kashiwagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -60,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
